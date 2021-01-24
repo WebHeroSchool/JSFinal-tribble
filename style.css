@@ -56,7 +56,8 @@
 }
 
 .levels__item:hover::before,
-.levels__item:visited::before {
+.levels__item:visited::before,
+.levels__item:focus::before {
   background: url('Pictures/Rectangle 2.svg') no-repeat;
   background-size: cover;
   border: none;

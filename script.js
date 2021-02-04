@@ -2,10 +2,14 @@ const body = document.body;
 const startButton = document.getElementById('start');
 const levelButtons = document.querySelectorAll('.levels__item');
 const cardTable = document.createElement('div');
+const mainScreen = document.getElementById('wrapper');
 
 function returnToMainScreen() {
-	document.querySelector('.card-table').style.display = 'none';
-	document.getElementById('wrapper').style.display = 'inline';
+	// document.querySelector('.card-table').style.display = 'none';
+	// document.getElementById('wrapper').style.display = 'inline';
+	body.appendChild(mainScreen);
+  cardTable.innerHTML = '';
+  cardTable.remove();
 };
 
 function chooseLevel(level) {
@@ -20,9 +24,10 @@ function startGame() {
   let currentNumberOfCards = item  =>  item;
   let numberOfCards = currentNumberOfCards(selectedLevel);
 
-  document.getElementById('wrapper').style.display = 'none';
+ //  document.getElementById('wrapper').style.display = 'none';
 	cardTable.classList.add('card-table');
-	body.append(cardTable);
+  mainScreen.remove();
+	body.appendChild(cardTable);
 
 	let card = () => {
     function createCards() {

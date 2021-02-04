@@ -1,8 +1,13 @@
 .body {
-	padding: 130px 0 0 102px;
+	padding: 0;
+	margin: 0;
 	background: no-repeat url('Pictures/Background.png');
 	background-color: #019976;
   background-size: cover;
+}
+
+.main-screen {
+	padding: 130px 0 0 102px;
 }
 
 /* Header */
@@ -12,7 +17,6 @@
 }
 
 .header__title {
-
 	margin-top: 0;
 	margin-bottom: 8px;
 	font: 700 57px/66.8px 'Roboto', sans-serif;
@@ -124,11 +128,12 @@
 /* Card Table */
 
 .card-table {
-	padding: auto;
+	margin: 100px auto;
 	display: flex;
 	justify-content: space-around;
   align-items: center;
   flex-wrap: wrap;
+  width: 1300px;
 }
 
 .card-wrapper {
@@ -147,28 +152,30 @@
 
 .card-backside,
 .looser-card {
-    position: absolute;
-    backface-visibility: hidden;
-    -webkit-backface-visibility: hidden;
-    box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7);
-    border-radius: 10px;
-    transition: .5s ease-in-out;
+	width: 100%;
+	height: 100%;
+  position: absolute;
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+  box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7);
+  border-radius: 10px;
+  transition: .5s ease-in-out;
 }
 
 .card-backside:hover {
-    transform: rotate(-3deg) translateY(-20px);
-    box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.5);
-    transition: .5s ease-in-out;
+  transform: rotate(-3deg) translateY(-20px);
+  box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.5);
+  transition: .5s ease-in-out;
 }
 
 .looser-card {
-    transform: rotateY(180deg);
+  transform: rotateY(180deg);
 }
 
 /* Media Queries*/
 
 @media (max-width: 1280px) {
-	.body {
+	.main-screen {
   	padding: 60px 0 0 82px;
 	}
 
@@ -197,6 +204,10 @@
   	height: 269px;
     width: 173px;
   }
+
+  .card-table {
+    width: 800px;
+  }
 }
 
 @media (max-width: 1024px) {
@@ -211,7 +222,7 @@
 }
 
 @media (max-width: 768px) {
-	.body {
+	.main-screen {
   	padding-left: 32px;
 	}
 
@@ -259,10 +270,15 @@
   	left: 108px;
 		top: 20px;
   }
+
+  .card-table {
+	  margin: 50px auto;
+    width: 700px;
+  }
 }
 
 @media (max-width: 426px) {
-	.body {
+	.main-screen {
 		padding: auto;
 		padding-bottom: 82px;
 	}
@@ -270,4 +286,20 @@
 	.cards {
 		display: none;
 	}
+
+	.card-table {
+		margin: 100px auto;
+    width: 300px;
+  }
+
+  .card-wrapper {
+  	height: 209px;
+    width: 134px;
+  }
+
+  .card-backside,
+  .looser-card {
+		height: 209px;
+		width: 134px;
+  }
 }

@@ -35,8 +35,8 @@ function startGame() {
 			cardBack.src = 'Pictures/card_back.png';
 			cardLooser.src = 'Pictures/loser_card.png';
 			cardTable.append(cardWrap);
-			cardWrap.append(cardBack);
 			cardWrap.append(cardLooser);
+			cardWrap.append(cardBack);
 	  };
 	  createCards();
   };
@@ -62,7 +62,6 @@ function startGame() {
         numberOfCards = 10;
         break;
         };
-  };
 
   const cards = document.querySelectorAll('.card-wrapper');
 
@@ -81,6 +80,7 @@ function startGame() {
   };
 
   cards.forEach((card) => card.addEventListener('click', flipCard));
+  };
 
   createTable(selectedLevel);
 };

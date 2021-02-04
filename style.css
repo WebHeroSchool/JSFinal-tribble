@@ -1,5 +1,5 @@
 .body {
-  padding: 130px 0 0 102px;
+	padding: 130px 0 0 102px;
 	background: no-repeat url('Pictures/Background.png');
 	background-color: #019976;
   background-size: cover;
@@ -12,6 +12,7 @@
 }
 
 .header__title {
+
 	margin-top: 0;
 	margin-bottom: 8px;
 	font: 700 57px/66.8px 'Roboto', sans-serif;
@@ -125,7 +126,7 @@
 .card-table {
 	padding: auto;
 	display: flex;
-	justify-content: space-between;
+	justify-content: space-around;
   align-items: center;
   flex-wrap: wrap;
 }
@@ -151,12 +152,13 @@
     -webkit-backface-visibility: hidden;
     box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7);
     border-radius: 10px;
+    transition: .5s ease-in-out;
 }
 
 .card-backside:hover {
     transform: rotate(-3deg) translateY(-20px);
     box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.5);
-    transition: .7s ease-in-out;
+    transition: .5s ease-in-out;
 }
 
 .looser-card {

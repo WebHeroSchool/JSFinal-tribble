@@ -1,63 +1,63 @@
 .body {
-	padding: 0;
-	margin: 0;
-	background: no-repeat url('Pictures/Background.png');
-	background-color: #019976;
+  padding: 0;
+  margin: 0;
+  background: no-repeat url('Pictures/Background.png');
+  background-color: #019976;
   background-size: cover;
 }
 
 .main-screen {
-	padding: 130px 0 0 102px;
+  padding: 130px 0 0 102px;
 }
 
 /* Header */
 
 .header {
-	color: #fff;
+  color: #fff;
 }
 
 .header__title {
-	margin-top: 0;
-	margin-bottom: 8px;
-	font: 700 57px/66.8px 'Roboto', sans-serif;
+  margin-top: 0;
+  margin-bottom: 8px;
+  font: 700 57px/66.8px 'Roboto', sans-serif;
 }
 
 .header__text {
-	margin-bottom: 60px;
-	font: 700 22px/23.44px 'Roboto', sans-serif;
+  margin-bottom: 60px;
+  font: 700 22px/23.44px 'Roboto', sans-serif;
 }
 
 .header__text_regular {
-	font-weight: 400;
+  font-weight: 400;
 }
 
 /* Main Screen */
 
 .main-content {
-	display: inline-flex;
-	justify-content: space-between;
+  display: inline-flex;
+  justify-content: space-between;
 }
 
 .levels {
-	display: flex;
-	flex-direction: column;
+  display: flex;
+  flex-direction: column;
 }
 
 .levels__item {
-	position: relative;
-	margin-bottom: 24px;
-	padding-left: 48px;
-	height: 59px;
-	text-align: left;
+  position: relative;
+  margin-bottom: 24px;
+  padding-left: 48px;
+  height: 59px;
+  text-align: left;
   font: 700 50px/58.6px 'Roboto', sans-serif;
   color: #fff;
-	background: transparent;
-	border: none;
+  background: transparent;
+  border: none;
 }
 
 .levels__item:hover {
-	cursor: pointer;
-	text-shadow: 3px 3px 3px #005a43;
+  cursor: pointer;
+  text-shadow: 3px 3px 3px #005a43;
 }
 
 .levels__item:hover::before,
@@ -80,22 +80,22 @@
 }
 
 .start-button {
-	margin: 112px 0 200px;
-	width: 352px;
+  margin: 112px 0 200px;
+  width: 352px;
   height: 95px;
-	font: 700 32px/37.5px 'Roboto', sans-serif;
-	color: #fff;
-	background: #d62b2e;
+  font: 700 32px/37.5px 'Roboto', sans-serif;
+  color: #fff;
+  background: #d62b2e;
   border: none;
-	border-radius: 7px;
+  border-radius: 7px;
   -webkit-box-shadow: 0 5px 10px -5px #000;
-	-moz-box-shadow: 0 5px 10px -5px #000;
-	box-shadow: 0 5px 10px -5px #000;
+  -moz-box-shadow: 0 5px 10px -5px #000;
+  box-shadow: 0 5px 10px -5px #000;
 }
 
 .start-button:hover {
-	cursor: pointer;
-	opacity: .9;
+  cursor: pointer;
+  opacity: .9;
 }
 
 .start-button:visited,
@@ -110,27 +110,27 @@
 }
 
 .cards__item {
-	width: 218px;
+  width: 218px;
   height: 341px;
 }
 
 .cards__item_bottom {
-	transform: rotate(11.9deg);
+  transform: rotate(11.9deg);
 }
 
 .cards__item_top {
-	position: absolute;
+  position: absolute;
   left: 178px;
   top: 20px;
-	transform: rotate(39.26deg);
+  transform: rotate(39.26deg);
 }
 
 /* Card Table */
 
 .card-table {
-	margin: 100px auto;
-	display: flex;
-	justify-content: space-around;
+  margin: 100px auto;
+  display: flex;
+  justify-content: space-around;
   align-items: center;
   flex-wrap: wrap;
   width: 1300px;
@@ -152,8 +152,8 @@
 
 .card-backside,
 .looser-card {
-	width: 100%;
-	height: 100%;
+  width: 100%;
+  height: 100%;
   position: absolute;
   backface-visibility: hidden;
   -webkit-backface-visibility: hidden;
@@ -175,33 +175,33 @@
 /* Media Queries*/
 
 @media (max-width: 1280px) {
-	.main-screen {
-  	padding: 60px 0 0 82px;
-	}
+  .main-screen {
+    padding: 60px 0 0 82px;
+  }
 
-	.header__title {
-		margin-top: 0;
-  	font: 700 50px/60px 'Roboto', sans-serif;
+  .header__title {
+    margin-top: 0;
+    font: 700 50px/60px 'Roboto', sans-serif;
   }
 
   .levels__item {
-  	font: 700 40px/50px 'Roboto', sans-serif;
+    font: 700 40px/50px 'Roboto', sans-serif;
   }
 
   .start-button {
-		margin: 70px 0 150px 0;
-		width: 320px;
-  	height: 86px;
-  	font: 700 26px/31.5px 'Roboto', sans-serif;
-	}
+    margin: 70px 0 150px 0;
+    width: 320px;
+    height: 86px;
+    font: 700 26px/31.5px 'Roboto', sans-serif;
+  }
 
-	.cards {
-  	top: 65%;
-  	left: 60%;
+  .cards {
+    top: 65%;
+    left: 60%;
   }
 
   .cards__item {
-  	height: 269px;
+    height: 269px;
     width: 173px;
   }
 
@@ -211,95 +211,95 @@
 }
 
 @media (max-width: 1024px) {
-	.start-button {
-		margin: 70px 0 100px 0;
-	}
+  .start-button {
+    margin: 70px 0 100px 0;
+  }
 
-	.cards {
-  	top: 55%;
-  	left: 50%;
+  .cards {
+    top: 55%;
+    left: 50%;
   }
 }
 
 @media (max-width: 768px) {
-	.main-screen {
-  	padding-left: 32px;
-	}
+  .main-screen {
+    padding-left: 32px;
+  }
 
-	.header__title {
-  	font: 700 40px/50px 'Roboto', sans-serif;
+  .header__title {
+    font: 700 40px/50px 'Roboto', sans-serif;
   }
 
   .header__text {
-		margin-bottom: 40px;
-	}
+    margin-bottom: 40px;
+  }
 
   .levels__item {
-  	margin-bottom: 10px;
-  	font: 700 30px/35px 'Roboto', sans-serif;
+    margin-bottom: 10px;
+    font: 700 30px/35px 'Roboto', sans-serif;
   }
 
   .levels__item:hover::before,
   .levels__item:visited::before,
   .levels__item_active::before {
-  	width: 18px;
-  	height: 18px;
-  	position: absolute;
-  	top: 18px;
-  	left: 10px;
-	}
+    width: 18px;
+    height: 18px;
+    position: absolute;
+    top: 18px;
+    left: 10px;
+  }
 
   .start-button {
-		margin: 50px 0 100px 0;
-		width: 260px;
-  	height: 66px;
-  	font: 700 22px/27.5px 'Roboto', sans-serif;
-	}
+    margin: 50px 0 100px 0;
+    width: 260px;
+    height: 66px;
+    font: 700 22px/27.5px 'Roboto', sans-serif;
+  }
 
-	.cards {
-  	top: 65%;
-  	left: 55%;
+  .cards {
+    top: 65%;
+    left: 55%;
   }
 
   .cards__item {
-  	height: 209px;
+    height: 209px;
     width: 134px;
   }
 
   .cards__item_top {
-  	left: 108px;
-		top: 20px;
+    left: 108px;
+    top: 20px;
   }
 
   .card-table {
-	  margin: 50px auto;
+    margin: 50px auto;
     width: 700px;
   }
 }
 
 @media (max-width: 426px) {
-	.main-screen {
-		padding: auto;
-		padding-bottom: 82px;
-	}
+  .main-screen {
+    padding: auto;
+    padding-bottom: 82px;
+  }
 
-	.cards {
-		display: none;
-	}
+  .cards {
+    display: none;
+  }
 
-	.card-table {
-		margin: 100px auto;
+  .card-table {
+    margin: 100px auto;
     width: 300px;
   }
 
   .card-wrapper {
-  	height: 209px;
+    height: 209px;
     width: 134px;
   }
 
   .card-backside,
   .looser-card {
-		height: 209px;
-		width: 134px;
+    height: 209px;
+    width: 134px;
   }
 }

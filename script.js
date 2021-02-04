@@ -5,7 +5,7 @@ const cardTable = document.createElement('div');
 const mainScreen = document.getElementById('wrapper');
 
 function returnToMainScreen() {
-	body.appendChild(mainScreen);
+  body.appendChild(mainScreen);
   cardTable.innerHTML = '';
   cardTable.remove();
 };
@@ -18,29 +18,29 @@ function chooseLevel(level) {
 levelButtons.forEach((item) => item.addEventListener('click', chooseLevel));
 
 function startGame() {
-	let selectedLevel = document.querySelector('.levels__item_active').getAttribute('id');
+  let selectedLevel = document.querySelector('.levels__item_active').getAttribute('id');
   let currentNumberOfCards = item  =>  item;
   let numberOfCards = currentNumberOfCards(selectedLevel);
 
-	cardTable.classList.add('card-table');
+  cardTable.classList.add('card-table');
   mainScreen.remove();
-	body.appendChild(cardTable);
+  body.appendChild(cardTable);
 
-	let card = () => {
+  let card = () => {
     function createCards() {
-	    let cardWrap = document.createElement('div');
+      let cardWrap = document.createElement('div');
       cardWrap.classList.add('card-wrapper');
       let cardBack = document.createElement('img');
-			let cardLooser = document.createElement('img');
-			cardBack.classList.add('card-backside');
-			cardLooser.classList.add('looser-card');
-			cardBack.src = 'Pictures/card_back.png';
-			cardLooser.src = 'Pictures/loser_card.png';
-			cardTable.append(cardWrap);
-			cardWrap.append(cardLooser);
-			cardWrap.append(cardBack);
-	  };
-	  createCards();
+      let cardLooser = document.createElement('img');
+      cardBack.classList.add('card-backside');
+      cardLooser.classList.add('looser-card');
+      cardBack.src = 'Pictures/card_back.png';
+      cardLooser.src = 'Pictures/loser_card.png';
+      cardTable.append(cardWrap);
+      cardWrap.append(cardLooser);
+      cardWrap.append(cardBack);
+    };
+    createCards();
   };
   
   function createTable(level) {

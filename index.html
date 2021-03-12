@@ -10,37 +10,39 @@
 	  </title>
   </head>
   <body class="body">
-  	<header class="header">
-  		<h1 class="header__title">
-  			Выберите уровень сложности:
-  		</h1>
-  		<p class="header__text">
-  			Выберите сложность и игра начнется.
-					<span class="header__text header__text_regular">
-						Чем выше уровень - тем больше будет выборка карт.
-					</span>
-  		</p>
-  	</header>
-  	<main class="main-content">
-  		<section class="levels">
-        <button class="levels__item" id="simple">
-        	Простой
-        </button>
-        <button class="levels__item" id="middle">
-        	Средний
-        </button>
-        <button class="levels__item" id="difficult">
-        	Сложный
-        </button>
-        <button type="button" class ="start-button" id="start">
-      	  Начать игру
-        </button>
-      </section>
-      <div class="cards" id="card-pictures">
-      	<img class="cards__item cards__item_bottom" src="Pictures/card back.png">
-      	<img class="cards__item cards__item_top" src="Pictures/card back.png">
-      </div>
-    </main>
+  	<div class="main-screen" id="wrapper">
+  		<header class="header">
+  			<h1 class="header__title">
+  				Выберите уровень сложности:
+  			</h1>
+  			<p class="header__text">
+  				Выберите сложность и игра начнется.
+						<span class="header__text header__text_regular">
+							Чем выше уровень - тем больше будет выборка карт.
+						</span>
+  			</p>
+  		</header>
+  		<main class="main-content">
+  			<section class="levels">
+      	  <button class="levels__item levels__item_active" id="simple">
+       		 	Простой
+      	  </button>
+      	 	<button class="levels__item" id="middle">
+       		 	Средний
+      	  </button>
+      	  <button class="levels__item" id="difficult">
+      	  	Сложный
+      		 </button>
+       	 	<button type="button" class ="start-button" id="start">
+      	 		Начать игру
+        	</button>
+      	</section>
+      	<div class="cards" id="card-pictures">
+      		<img class="cards__item cards__item_bottom" src="Pictures/card_back.png">
+      		<img class="cards__item cards__item_top" src="Pictures/card_back.png">
+      	</div>
+    	</main>
+    </div>
   	<script src="script.js"></script>
   </body>
 </html>
